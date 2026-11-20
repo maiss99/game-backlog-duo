@@ -90,7 +90,10 @@ const completedCount = games.filter(game => game.completed).length;
             </section>
             <section>
                 <div className="gb-list-heading">
+                    <div>
                     <h2>Mijn games</h2>
+                    <p>Zichtbaar: {visibleGames.length} van {games.length}</p>
+                    </div>
                     <label>Zoek op titel
                         <input value={search} placeholder="Zoek een game..."
                             onChange={(e) => setSearch(e.target.value)} />
